@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+<body>
+    <h1>Balck Goose Bistro | Pizza-on-demand</h1>
+    <p>
+        Welcome to our Pizza Ordering Form! At Balck Goose Bistro Pizza, we've made it incredibly easy for you to customize and order your favorite pizzas. Choose from a variety of mouthwatering toppings, crust styles, and sizes to create your perfect pie. Whether it's delivery or pickup, our user-friendly form ensures you get exactly what you crave. Dive into a delightful pizza experience with us!
+    </p>
+<div class="container"></div>
+    <form action="http://blackgoosebistro.com/pizza.php" method="post">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td>
+                                <input type="text" name="customername">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Address:</td>
+                            <td>
+                                <textarea name="address" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Telp:</td>
+                            <td>
+                                <input type="number" name="telephone">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Email:</td>
+                            <td>
+                                <input type="email" name="email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Delivery instructions:</td>
+                            <td>
+                                <textarea name="instructions" cols="30" rows="5"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            
+
+            <h4>Design Your Dream Pizza</h4>
+            <p>Piza specs</p>
+            Crust (Choose one:)
+            <br>
+            <input type="radio" name="crust" value="Classic white">Classic white
+            <br>
+            <input type="radio" name="crust" value="Multigrain">Multigrain
+            <br>
+            <input type="radio" name="crust" value="Cheese-stuffed crust">Cheese-stuffed crust
+            <br>
+            <input type="radio" name="crust" value="Gluten-free">Gluten-free
+            <br>
+            <br>
+
+            Toppings (Choose as many as you want):
+            <br>
+            <input type="checkbox" name="toppings[]" value="Red Sauce"> Red Sauce
+            <br>
+            <input type="checkbox" name="toppings[]" value="White Sauce"> White Sauce
+            <br>
+            <input type="checkbox" name="toppings[]" value="Mozzarella"> Mozzarella
+            <br>
+            <br>
+
+            Number
+            <br>
+            <label for="pizzas">How many pizzas:</label>
+            <select name="pizzas" id="pizzas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <br>
+        
+        <br>
+        <button type="submit">Bring me a pizza</button>
+        <button type="reset">Reset</button>
+        <br>
+    </form>
+</body>
+</html>
