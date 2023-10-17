@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+    <style>
+        body {
+            background-color: beige;
+        }
+        .table {
+            display: grid;
+            justify-content: center;
+            margin: 0 25% 0 25%;
+        }
+        .table-fixed {
+            margin: 0 -40% 0 -40%;
+            background-color: antiquewhite;
+        }
+        .table-fixed ul {
+            display: flex;
+            list-style: none;
+            position: relative;
+            left: 25%;
+        }
+        .table-fixed li {
+            margin-right: 80px;
+        }
+        .container {
+            display: flex;
+            margin: 6rem;
+        }
+        .list {
+            margin-left: 180px;
+        }
+        .content {
+            margin-left: 150px;
+        }
+        .content img {
+            border-radius: 10px;
+        }
+    </style>
+<body>
+    <form action="hasil_form.html" method="post">
+        <div class="table">
+            <div class="table-fixed" style="border: 1px solid black;">
+                <h3>
+                    <ul>
+                        |
+                        <li>
+                            Home|
+                        </li>
+                        |
+                        <li>
+                            Transaksi|
+                        </li>
+                        |
+                        <li>
+                            Keluar|
+                        </li>
+                    </ul>
+                </h2>
+            </div>
+        </div>
+        <div class="container">
+        <div class="content">
+            <img src="Ayam_ungkep.jpeg" style="max-width: 255px;">
+        </div>
+        <div class="list">
+        <table>
+            <tr>
+                <td>Nama Barang:</td>
+                <td>
+                    <input type="text" name="customername">
+                </td>
+            </tr>
+
+            <tr>
+                            <td>Address:</td>
+                <td>
+                    <textarea name="address" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Telp:</td>
+                <td>
+                    <input type="number" name="telephone">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Delivery instructions:</td>
+                <td>
+                    <textarea name="instructions" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Bank: </td>
+                <td>
+                    <select name="Bank" id="Bank">
+                        <option value="-">pilih</option>
+                        <option value="BNI">BNI</option>
+                        <option value="BCA">BCA</option>
+                        <option value="Mandiri">Mandiri</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jumlah barang: </td>
+                <td>
+                <select name="jumlah barang" id="jumlah barang">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </td>
+            </tr>
+
+            <td>
+                Silahkan pilih:
+            <br>
+            <input type="radio" name="varian" value="4 Potong">4 Potong
+            <br>
+            <input type="radio" name="varian" value="6 Potong">6 Potong
+            <br>
+            </td>
+
+            <tr>
+                <td>
+                    <button type="submit">Pesan</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        
+        </table>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
