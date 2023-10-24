@@ -3,7 +3,7 @@
     border-radius: 8px;
     height: 120ex;
     margin: 0 250px 0 250px;
-    border-radius: inherit;
+    border-color: transparent;
 }
 .content{
     display: flex;
