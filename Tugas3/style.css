@@ -20,3 +20,8 @@
 .content-bottom img{
     margin: 10px;
 }
+.content-bottom iframe{
+    width: 320;
+    height: 160;
+    frameborder: 0;
+}
