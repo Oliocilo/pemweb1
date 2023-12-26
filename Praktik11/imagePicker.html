@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <select id="selectAnimal">
+        <option value="beruang.jpg">Beruang</option>
+        <option value="burung.png">Burung</option>
+        <option value="gajah.png">Gajah</option>
+        <option value="panda.jpg" selected>Panda</option>
+        <option value="serigala.jpg">Serigala</option>
+    </select>
+    <br>
+    <br>
+    <img src="" id="image">
+
+
+    <script>
+        // tangkap elemen yg dibutuhkan
+        const selectAnimal = document.getElementById("selectAnimal")
+        const Image = document.getElementById("image")
+
+        // panggil fungsi changeImage ketika tag select berubah
+        selectAnimal.addEventListener("change", changeImage)
+
+        // fungsi untuk mengubah source image
+        function changeImage() {
+            image.src = "img/" + selectAnimal.value
+        }
+
+        // panggil fungsi
+        changeImage()
+    </script>
+</body>
+</html>
